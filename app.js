@@ -13,7 +13,7 @@ const savedList = document.querySelector(".savedList")
 
 main.addEventListener("click", changeColor)
 
-function changeColor(){
+function changeColor(biseygelicek){
     
     if(number.textContent > 0){
         number.style.color = "green"
@@ -22,6 +22,15 @@ function changeColor(){
     }else{
         number.style.color = "grey"
     }
+
+    if(biseygelicek.textContent  > "0"){
+        biseygelicek.style.border = "3px solid green"
+    }else if(biseygelicek.textContent  < "0"){
+        biseygelicek.style.border = "3px solid red"
+    }else{
+        biseygelicek.style.border = "3px solid grey"
+    }
+   
 }
 
 button1.addEventListener("click", increase)
@@ -52,14 +61,14 @@ button4.addEventListener("click", addNumberToUI)
 
 function addNumberToUI(){
 
-    const newList = document.createElement("li")
+    const newList = document.createElement("span")
     newList.className = "numberList"
 
     newList.textContent = number.textContent
+    changeColor(newList)
 
     savedList.appendChild(newList)
 
-    console.log(newList)
   
 }
 

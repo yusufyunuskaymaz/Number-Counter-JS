@@ -17,55 +17,56 @@
 
     <div class="main">
         <h1 class="number">0</h1>
+
         <div class="buttons">
             <button class="button1">Increase+</button>
             <button class="button3">Reset</button>
             <button class="button2">Decrease-</button>
             <button class="button4">Save</button>
             <button class="button5">Delete All</button>
-
         </div>
+
         <div>
-          <ul class="savedList">
-              
-          </ul>
+            <div class="savedList">
+                <!-- Number will be here with js -->
+            </div>
         </div>
     </div>
 
-
-
-
-
     <style>
-        
-        body{
+        body {
             background-color: cornsilk;
         }
 
-        .savedList{
+        .savedList {
             margin-top: 25px;
+            text-align: center;
+
         }
 
-        .numberList{
-           list-style-type: none;
-           text-align: left;
-           border: 2px solid lightseagreen;
-           width: 25%;
-           padding: 10px 15px;
-           text-align: center;
+        .numberList {
+            list-style-type: none;
+            text-align: left;
+            border: 2px solid lightseagreen;
+            width: 25%;
+            padding: 10px 15px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0 3px;
+            color: grey;
         }
 
-
-        .main{
+        .main {
             text-align: center;
             margin-top: 200px;
         }
 
-        button:focus{
+        button:focus {
             outline: none;
         }
 
-        .button1{
+        .button1 {
             background-color: white;
             color: green;
             border: 2px solid green;
@@ -73,14 +74,15 @@
             padding: 7px 15px;
             font-size: 25px;
             font-weight: 500;
-            
+
         }
-        .button1:hover{
+
+        .button1:hover {
             background-color: green;
             color: white;
         }
-        
-        .button2{
+
+        .button2 {
             background-color: white;
             color: #FFC107;
             border: 2px solid #FFC107;
@@ -89,12 +91,13 @@
             font-size: 25px;
             font-weight: 500;
         }
-        .button2:hover{
+
+        .button2:hover {
             background-color: #FFC107;
             color: white;
         }
 
-        .button3{
+        .button3 {
             background-color: white;
             color: grey;
             border: 2px solid grey;
@@ -103,12 +106,13 @@
             font-size: 25px;
             font-weight: 500;
         }
-        .button3:hover{
+
+        .button3:hover {
             background-color: grey;
             color: white;
         }
 
-        .button4{
+        .button4 {
             background-color: white;
             color: blue;
             border: 2px solid blue;
@@ -117,12 +121,13 @@
             font-size: 25px;
             font-weight: 500;
         }
-        .button4:hover{
+
+        .button4:hover {
             background-color: blue;
             color: white;
         }
 
-        .button5{
+        .button5 {
             background-color: white;
             color: red;
             border: 2px solid red;
@@ -131,17 +136,16 @@
             font-size: 25px;
             font-weight: 500;
         }
-        .button5:hover{
+
+        .button5:hover {
             background-color: red;
             color: white;
         }
 
-        .number{
+        .number {
             color: grey;
             font-size: 75px;
         }
-        
-
 
         * {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -156,14 +160,14 @@
             margin: 15px;
             width: 50%;
         }
-        .todoLi{
+
+        .todoLi {
             background-color: #ccc;
             width: 25%;
             padding: 10px 10px;
             border: 1px solid black;
             text-align: center;
             list-style-type: none;
-
 
         }
     </style>
